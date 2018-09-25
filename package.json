@@ -1,0 +1,68 @@
+{
+  "description": "NativeScript Application",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "readme": "NativeScript Application",
+  "repository": "<fill-your-repository-here>",
+  "nativescript": {
+    "id": "org.nativescript.tabview",
+    "tns-android": {
+      "version": "4.2.0"
+    },
+    "tns-ios": {
+      "version": "4.2.0"
+    }
+  },
+  "scripts": {
+    "ios.alert.version": "echo '\\033[0;101m Did you need to change the version number? (Info.plist -> CFBundleShortVersionString) \\x1B[0m'",
+    "ios.alert.build": "echo '\\033[0;101m Did you change the build number? (Info.plist -> CFBundleVersion) \\x1B[0m'",
+    "ios.alert.xcode": "echo '\\033[0;101m Continue in Xcode via platforms/ios/*.xcworkspace \\x1B[0m'",
+    "ios.clean": "rm -rf platforms/ios",
+    "ios.platform.add": "tns platform add ios",
+    "ios.prepare": "tns prepare ios --release",
+    "ios.build": "tns build ios --bundle --env.aot --env.uglify --release --forDevice",
+    "ios.release": "clear && npm run -s ios.alert.version && npm run -s ios.alert.build && npm run -s ios.clean && npm run ios.build && npm run -s ios.alert.xcode",
+    "android.alert.version": "echo '\\033[0;101m Did you need to change the version number? (AndroidManifest.xml -> android:versionName) \\x1B[0m'",
+    "android.alert.build": "echo '\\033[0;101m Did you change the build number? (Android: AndroidManifest.xml -> android:versionCode) \\x1B[0m'",
+    "android.clean": "rm -rf platforms/android",
+    "android.platform.add": "tns platform add android",
+    "android.build": "tns build android --release --key-store-path ../doubler.jks --key-store-password PoekieWoekie --key-store-alias doubler --key-store-alias-password PoekieWoekie",
+    "android.release": "clear && npm run -s android.alert.version && npm run -s android.alert.build && npm run -s android.clean && npm run android.platform.add && npm run android.build"
+  },
+  "dependencies": {
+    "@angular/animations": "6.1.1",
+    "@angular/common": "6.1.1",
+    "@angular/compiler": "6.1.1",
+    "@angular/core": "6.1.1",
+    "@angular/forms": "6.1.1",
+    "@angular/http": "6.1.1",
+    "@angular/platform-browser": "6.1.1",
+    "@angular/platform-browser-dynamic": "6.1.1",
+    "@angular/router": "6.1.1",
+    "@ngx-translate/core": "10.0.2",
+    "@ngx-translate/http-loader": "3.0.1",
+    "email-validator": "^2.0.4",
+    "lodash": "4.17.5",
+    "nativescript-angular": "6.1.0",
+    "nativescript-ngx-fonticon": "4.0.0",
+    "nativescript-theme-core": "1.0.4",
+    "reflect-metadata": "0.1.12",
+    "rxjs": "6.2.2",
+    "rxjs-compat": "^6.3.1",
+    "tns-android": "4.2.0",
+    "tns-core-modules": "^4.2.0",
+    "zone.js": "0.8.26"
+  },
+  "devDependencies": {
+    "@angular/compiler-cli": "~6.1.0",
+    "@ngtools/webpack": "~6.1.0",
+    "babel-traverse": "6.26.0",
+    "babel-types": "6.26.0",
+    "babylon": "6.18.0",
+    "lazy": "1.0.11",
+    "nativescript-dev-sass": "^1.6.0",
+    "nativescript-dev-typescript": "0.7.2",
+    "nativescript-dev-webpack": "^0.15.1",
+    "tns-platform-declarations": "4.2.0",
+    "typescript": "2.7.2"
+  }
+}

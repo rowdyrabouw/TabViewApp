@@ -1,0 +1,6 @@
+// Place any CSS rules you want to apply only on IOS here
+@import "../../assets/scss/variables/color";
+tabview {
+  tab-background-color: $primary;
+  selected-tab-text-color: $white;
+}

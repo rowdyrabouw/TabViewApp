@@ -1,0 +1,11 @@
+{
+  "VERSION": {
+    "NR": "1.0",
+    "LANGUAGE": "Nederlands"
+  },
+  "WELCOME": {
+    "PAGETITLE": "Welkom",
+    "NEXT": "Tabview",
+    "TEXT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam, enim a iaculis finibus, lorem ligula auctor ipsum, at imperdiet lorem purus in augue. Nulla facilisi. Curabitur elementum arcu nunc, id mattis lectus placerat vitae. Nam pharetra diam lacus, eu sodales ipsum malesuada sed. Nunc at imperdiet ipsum, eu mattis elit. Cras ultrices venenatis tincidunt. Nunc et sem vestibulum, congue diam id, bibendum erat. Curabitur fermentum arcu ac massa convallis iaculis. Phasellus vulputate finibus sodales. Vestibulum efficitur, magna in semper rhoncus, quam metus condimentum nulla, nec pellentesque purus quam bibendum est. Fusce sit amet enim suscipit enim varius sagittis."
+  }
+}

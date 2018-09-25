@@ -1,0 +1,16 @@
+<ActionBar [title]="'WELCOME.PAGETITLE' | translate" icon="" class="actionbar" flat="true">
+    <NavigationButton visibility="collapsed"></NavigationButton>
+</ActionBar>
+
+<GridLayout class="page-content page-padding" rows="*, 70">
+    <StackLayout row="0">
+        <ScrollView>
+            <StackLayout>
+                <Label [text]="'WELCOME.TEXT' | translate" textWrap="true"></Label>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+    <StackLayout row="1">
+        <Button class="btn" [text]="'WELCOME.NEXT' | translate" [nsRouterLink]="['/tabview']"></Button>
+    </StackLayout>
+</GridLayout>

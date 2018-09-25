@@ -1,0 +1,16 @@
+.input {
+  background-color: $white;
+  border-width: 1;
+  border-color: $grey;
+  color: $black;
+  min-height: 36;
+  min-width: 64;
+  padding: 10 10 10 10;
+  font-size: 16;
+  border-radius: 8;
+  margin: 8 16 8 16;
+  width: 300;
+  &-no-border {
+    border-width: 0;
+  }
+}

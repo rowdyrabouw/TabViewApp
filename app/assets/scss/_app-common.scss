@@ -1,0 +1,16 @@
+// Place any CSS rules you want to apply on both iOS and Android here.
+// This is where the vast majority of your CSS code goes.
+
+@import "app-variables";
+@import "app-mixins";
+@import "app-components";
+
+// Font icon class
+.fa {
+  font-family: "FontAwesome";
+}
+
+// //Action bar
+// actionbar .actionbar-title {
+//   horizontal-align: center;
+// }

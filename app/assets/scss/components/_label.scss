@@ -1,0 +1,40 @@
+.label {
+  color: $black;
+  font-size: 16;
+
+  &-subheader {
+    color: $white;
+  }
+  &-bold {
+    font-weight: bold;
+  }
+  &-highlight {
+    color: $primary;
+  }
+  &-large {
+    font-size: 20;
+    padding-bottom: 5;
+  }
+  &-medium {
+    font-size: 14;
+  }
+  &-small {
+    font-size: 13;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-padding-bottom {
+    padding-bottom: 20;
+  }
+  &-no-preference {
+    font-weight: bold;
+    padding-bottom: 50;
+  }
+}
+
+.number {
+  font-weight: bold;
+  font-size: 40;
+  color: $primary;
+}

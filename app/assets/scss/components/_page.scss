@@ -1,0 +1,45 @@
+.page-content {
+  background-color: $grey-light;
+  padding-top: 20;
+}
+
+.page-padding {
+  padding: 20;
+}
+
+.padding-top {
+  padding-top: 20;
+}
+
+.padding-top-small {
+  padding-top: 10;
+}
+
+.padding-bottom-small {
+  padding-bottom: 10;
+}
+
+.padding-left {
+  padding-left: 20;
+}
+
+.padding-right {
+  padding-right: 20;
+}
+
+.padding-bottom {
+  padding-bottom: 20;
+}
+
+.border-guest,
+.border-appointment {
+  background-color: $white;
+  border-width: 1 0 1 0;
+  border-color: $grey;
+}
+
+.border-guest-bottom,
+.border-appointment-bottom {
+  border-width: 0 0 1 0;
+  border-color: $grey;
+}

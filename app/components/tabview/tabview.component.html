@@ -1,0 +1,12 @@
+<ActionBar title="Title" icon="" class="actionbar" flat="true">
+    <NavigationButton visibility="collapsed"></NavigationButton>
+</ActionBar>
+
+<TabView (selectedIndexChanged)="onSelectedIndexChanged($event)">
+    <StackLayout *tabItem="{title: 'Tab 1'}">
+        <nsdata></nsdata>
+    </StackLayout>
+    <StackLayout *tabItem="{title: 'Tab 2'}">
+        <about></about>
+    </StackLayout>
+</TabView>

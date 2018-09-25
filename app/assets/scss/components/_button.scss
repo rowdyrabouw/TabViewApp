@@ -1,0 +1,25 @@
+$btn-font-size: 16 !default;
+$btn-radius: 8 !default;
+$btn-padding-x: 10 !default;
+$btn-padding-y: 10 !default;
+$btn-margin-x: 16 !default;
+$btn-margin-y: 8 !default;
+
+.btn {
+  color: $white;
+  background-color: $primary;
+  min-height: 36;
+  min-width: 64;
+  width: 300;
+  font-weight: bold;
+
+  @include button-base($btn-padding-y, $btn-padding-x, $btn-margin-y, $btn-margin-x, $btn-font-size, $btn-radius, 0);
+}
+
+.btn-demo {
+  background-color: red;
+}
+
+.btn-small {
+  width: 135;
+}
