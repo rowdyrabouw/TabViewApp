@@ -2,7 +2,7 @@
     <NavigationButton visibility="collapsed"></NavigationButton>
 </ActionBar>
 
-<TabView (selectedIndexChanged)="onSelectedIndexChanged($event)">
+<TabView (selectedIndexChanged)="onSelectedIndexChanged($event)" *ngIf="initFinished">
     <StackLayout *tabItem="{title: 'Tab 1'}">
         <nsdata></nsdata>
     </StackLayout>
